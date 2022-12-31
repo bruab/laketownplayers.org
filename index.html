@@ -1,0 +1,131 @@
+---
+layout: default
+title: Laketown Players
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Support Laketown Players</h1>
+                                <p class="editable">Laketown Players is a Nonprofit 501(c)(3) resident ensemble theatre troupe in historic Eufaula, AL. <a href="https://www.facebook.com/profile.php?id=100089107803208">Follow us on Facebook</a> for show dates, audition announcements, and volunteer opportunities. </p>
+				<div class="button">
+					<a href="#donate" style="display:none;">Donate Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/logo.jpg" alt="Laketown Players logo">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">Why your donation matters</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Community</h3>
+			<p class="editable">Community theatre actively brings us together and enriches lives of those who participate, as well as those entertained in the seats.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Art</h3>
+			<p class="editable">Organized performance art helps us build connections to better understand how we can cooperate to participate in the community around us.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">Purpose</h3>
+			<p class="editable">Fostering local talent creates unifying pride in our community and strengthens bonds through a distinct collective, transcendant purpose - the show must go on!</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="{{ site.baseurl }}/images/gathering.png" alt="Eufaula">
+		</div>
+		<div>
+			<h2 class="editable">Our Mission</h2>
+
+			<p class="editable">Build community. Our mission is to proudly showcase our local residents’ talent by creating and building lasting community connections in Eufaula, AL. We aim to bring together and celebrate our artists and audiences through the magic of live theatre.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<p class="quote editable">From the start is has been the theater's business to entertain people. It needs no other passport than fun.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/brecht.png" alt="Bertolt Brecht"></span>
+				<span class="author editable"><strong>Bertolt Brecht</strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<div class="darker" style="display:none;">
+	<div class="container">
+		<h2 class="editable">Join the Show</h2>
+		<p class="editable" style="text-align: center;">Sign up to receive an email with show dates!</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</div>
+
+<div class="container" id="donate" style="display:none;">
+	<h2 class="editable">Make a donation</h2>
+	<div class="donate">
+		{{ site.donation_embed }}
+	</div>
+</div>
+
+<div class="container" id="donation-levels">
+  <div style="text-align:center"<span class="image"><img class="editable" src="{{ site.baseurl }}/images/masks.png" alt="Drama masks"></span></div>
+        <p class="editable" style="text-align: center;">Contact us on Facebook or at <a href="mailto:laketownplayers@gmail.com">laketownplayers@gmail.com</a> for</p>
+        <ul>
+          <li>corporate-level sponsorship donations (levels listed below)</li>
+          <li>to make a legacy donation in your will or trust</li>
+          <li>to donate building materials, bleachers, choral risers, or other theatrical items</li>
+        </ul>
+        <h2 class="editable">Business Sponsorship Levels</h2>
+        <p><em>Supporting Cast  ($100) - </em> Gratitude and acknowledgement on our Facebook page</p>
+        <p><em>Featured Player [Local Businesses ONLY]  ($250-500) - </em>Sly business or product placement with explicit mention during a single production. Video clip will be featured on our Facebook page. Must have a sense of humor! The reference will fit the context of the play (at the director’s discretion) and may or may not be flattering. (Example Promo: “Uneasy lies the head that wears the crown. But the head that wears a Eufaula Brand Fedora™ is always in style!”)</p>
+        <p><em>Lead Player ($500-$1,000) - </em> Gratitude and acknowledgement on our Facebook page. Logo will be featured on our Facebook page as a “Lead Player Level” sponsor.</p>
+        <p><em>Director  ($1,000-$2,499) - </em> Gratitude and acknowledgement on our Facebook page and in the playbill for the duration of a single production. Logo will be featured on our Facebook page as a “Director Level” sponsor. Space to display signage (no larger than 5’x5’) at a single production.</p>
+        <p><em>Producer  ($2,500-$4,999) - </em> Gratitude and acknowledgement on our Facebook page and in the playbill for a full production year. Logo will be featured on our Facebook page as a “Producer Level” sponsor. Space to display signage (no larger than 5’x5’) for a full production year.</p>
+        <p><em>Executive ($5,000+) - </em> Gratitude and acknowledgement on our Facebook page and in the playbill for a full production year. Logo will be featured on our Facebook page as an “Executive Level” sponsor. Mention during the curtain speech of every production for a full production year. Local Eufaula businesses at this level reserve the option to extend product placement mentions for five (5) production years. </p>
+
+</div>
+
+<!-- 
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+-->
+
+
